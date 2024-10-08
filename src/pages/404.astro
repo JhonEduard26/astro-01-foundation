@@ -1,0 +1,47 @@
+---
+import MainLayout from "../layouts/main-layout.astro";
+---
+
+<MainLayout title="404 Page">
+  <div>
+    <h1>404</h1>
+    <p id="first-p">Sucedio un error</p>
+    <p id="second-p">Lo sentimos, no podemos encontrar lo que estas buscando</p>
+    <a href="/">Volver al home</a>
+  </div>
+</MainLayout>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88dvh;
+  }
+  h1 {
+    font-size: 10rem;
+    margin: 0;
+  }
+  #first-p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  #second-p {
+    margin: 0;
+    margin-block-end: 1.5rem;
+    font-size: 1.5rem;
+  }
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: midnightblue;
+    color: white;
+    transition: background-color 300ms;
+  }
+  a:hover {
+    background-color: blue;
+  }
+</style>
